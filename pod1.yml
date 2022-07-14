@@ -7,4 +7,8 @@ metadata:
 spec:
   containers:
   - name: pod1
+<<<<<<< HEAD
     image: devanshmittal/django:django
+=======
+    image: devanshmittal/django:django
+>>>>>>> 5f5ed4774a041e54bbe6e8951a0829418fa02dbd
