@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: djangoproj
+
+spec:
+  selector:
+    matchLabels:
+      app: django-demo
+  #replicas: 2 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: django-demo
+    spec:
+      containers:
+      - name: django-contain
+        image: devanshmittal/django:django
+        ports:
+        - containerPort: 8000
